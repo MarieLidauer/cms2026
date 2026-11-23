@@ -17,6 +17,10 @@ TCEFORM {
     }
 }
 
+tx_news.templateLayouts{
+    10= Custom Layout
+}
+
 TCEMAIN {
 
 }
