@@ -1,0 +1,27 @@
+name: fhooe/feature-grid
+typeName: fhooe_featuregrid
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: header
+    label: Header
+    useExistingField: true
+    prefixFields: false
+    prefixType: ''
+    required: true
+  -
+    identifier: intro
+    type: Textarea
+    label: 'Introduction Text'
+  -
+    identifier: cards
+    type: Collection
+    label: Cards
+    foreign_table: tt_content
+    allowedRecordTypes:
+      - fhooe_kwmcard
+    minitems: 1
+
+basics: {  }

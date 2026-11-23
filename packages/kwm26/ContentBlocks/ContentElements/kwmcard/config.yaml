@@ -1,0 +1,38 @@
+name: fhooe/kwmcard
+typeName: fhooe_kwmcard
+group: default
+prefixFields: true
+prefixType: full
+fields:
+  -
+    identifier: image
+    type: File
+    label: Image
+    description: ''
+    maxitems: 1
+    minitems: 1
+    extendedPalette: false
+    allowed: common-image-types
+  -
+    identifier: header
+    label: Header
+    useExistingField: true
+    prefixFields: false
+    prefixType: ''
+    required: true
+  -
+    identifier: bodytext
+    label: Bodytext
+    useExistingField: true
+    prefixFields: false
+    prefixType: ''
+  -
+    identifier: link
+    type: Link
+    label: Link
+  -
+    identifier: linktext
+    type: Text
+    label: Linktext
+    default: 'Mehr erfahren'
+basics: {  }
